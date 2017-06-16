@@ -28,9 +28,7 @@ Quick-links:
 
 1. Pip install:
 
-    ```bash
-    pip install django-seo-js
-    ```
+    The fork is not available with pip yet. Currently, you will have to install it manually.
 
 
 2. Add to your `settings.py`:
@@ -44,8 +42,8 @@ Quick-links:
 
     INSTALLED_APPS += ('django_seo_js',)
 
-    # If you're using prerender.io (the default backend):
-    SEO_JS_PRERENDER_TOKEN = "123456789abcdefghijkl"  # Really, put this in your env, not your codebase.
+    # If you're using SEO4Ajax (the default backend):
+    SEO_JS_SEO4AJAX_TOKEN = "123456789abcde0123456"  # Really, put this in your env, not your codebase.
     ```
 
 3. Add to your `base.html`
@@ -71,7 +69,7 @@ For the most part, you shouldn't need to override these - we've aimed for sensib
 
 ```python
 # Backend to use
-SEO_JS_BACKEND = "django_seo_js.backends.PrerenderIO"   # Default
+SEO_JS_BACKEND = "django_seo_js.backends.SEO4Ajax"   # Default
 
 # Whether to run the middlewares and update_cache_for_url.  Useful to set False for unit testing.
 SEO_JS_ENABLED = True # Defaults to *not* DEBUG.
@@ -101,19 +99,13 @@ SEO_JS_IGNORE_EXTENSIONS = [
 
 ## Backend settings
 
-### Prerender.io
-django-seo-js defaults to using prerender.io because it's both [open-source](https://github.com/prerender/prerender) if you want to run it yourself, *and* really reasonably priced if you don't.
-
-
-To use [prerender.io](http://prerender.io),
+### SEO4Ajax
+This fork of django-seo-js defaults to using SEO4Ajax.
 
 ```python
-# Prerender.io token
-SEO_JS_PRERENDER_TOKEN = "123456789abcdefghijkl"
+# SEO4Ajax token
+SEO_JS_SEO4AJAX_TOKEN = "123456789abcde0123456"
 ```
-
-You don't need to set `SEO_JS_BACKEND`, since it defaults to `"django_seo_js.backends.PrerenderIO"`.
-
 
 ### Custom-hosted prerender
 
