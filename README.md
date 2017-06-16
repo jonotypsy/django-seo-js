@@ -12,7 +12,7 @@ Quick-links:
 - [Options](#options)
     - [General Settings](#General-Settings)
     - [Backend settings](#Backend-settings)
-        - [Prerender.io](#Prerender-io)
+        - [SEO4Ajax](#SEO4Ajax)
         - [Custom-hosted prerender](#custom-hosted-prerender)
 - [Advanced Usage](#advanced-usage)
     - [Updating the render cache](#updating-the-render-cache)
