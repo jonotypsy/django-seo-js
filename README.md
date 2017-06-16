@@ -1,4 +1,4 @@
-django-seo-js
+django-seo-js for SEO4Ajax
 =============
 
 [![Build Status](https://circleci.com/gh/skoczen/django-seo-js/tree/master.svg?style=svg&circle-token=90ca5d5cbeb2af20bc378faf1b196e6c03e69f26)](https://circleci.com/gh/skoczen/django-seo-js/tree/master) ![Pypi Badge](https://badge.fury.io/py/django-seo-js.png)   ![Downloads Badge](https://pypip.in/d/django-seo-js/badge.png)
