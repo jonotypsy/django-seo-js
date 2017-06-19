@@ -26,10 +26,13 @@ Quick-links:
 
 # Installation
 
-1. Pip install:
+1. Manual install:
 
-    The fork is not available with pip yet. Currently, you will have to install it manually.
-
+    Download the [zip file](https://github.com/seo4ajax/django-seo-js/archive/master.zip) containing the project, unzip it in a directory and, from this directory, run the following command to install the module.
+    
+    ```
+    python setup.py install
+    ```
 
 2. Add to your `settings.py`:
 
