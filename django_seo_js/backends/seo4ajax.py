@@ -28,7 +28,6 @@ class SEO4Ajax(SEOBackendBase, RequestsBasedBackend):
         parsed_url = urlparse(url)
         render_url = self.BASE_URL + self.token + '/' + parsed_url.path + '?' + parsed_url.query
         r = self.session.get(render_url, allow_redirects=False)
-        assert r.status_code < 500 
  
         return self.build_django_response_from_requests_response(r)
  
